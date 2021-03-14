@@ -38,8 +38,8 @@ public class FilerOperationImpl implements FilerOperation {
                 for (int i = 0; i < line.getColumns().size(); i++) {
                     String str = line.getColumns().get(i).concat("\t");
                     bufferedWriter.write(str);
-                    bufferedWriter.write("\n");
                 }
+                bufferedWriter.write("\n");
             }
             bufferedWriter.close();
         } catch (IOException e) {
@@ -56,7 +56,7 @@ public class FilerOperationImpl implements FilerOperation {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String str;
             while ((str = bufferedReader.readLine()) != null){
-                String[] split = str.split("\t");
+                String[] split = str.split("\\s+");
                 List<String> columns = new ArrayList<>(Arrays.asList(split));
                 lineList.add(new Line(columns));
             }

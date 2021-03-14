@@ -1,7 +1,12 @@
-2   test    test    test    test
-3   test    test    test    test
-a   test    test    test    test
-b   test    test    test    test
-ab  test    test    test    test
-1   test    test    test    test
-1   abcd    test    test    test
+-2.2    2   3   4
+2.2 12345q  69  -afq
+2.2 12345q  69  -asdf
+-22 1234234 asdfasf asdgas
+-22 11  abc
+-22 -3  4
+
+-1.1
+
+qqqq    q1.1
+qqqq    0.1
+qqqq    -1.1
